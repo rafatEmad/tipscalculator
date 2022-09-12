@@ -1,0 +1,318 @@
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600 800;
+    src: local('Open Sans'), local('OPen Sans'), url("/fonts/Manrope-VariableFont_wght.ttf") format('truetype');
+}
+
+*,html {
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    box-sizing: inherit;
+    background-color: $Lightgrayishcyan;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Manrope";
+    overflow: hidden;
+    display: block;
+}
+
+
+
+.x{
+    display: none;
+}
+
+.title {
+    width: 100vw;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    padding: 20px;
+    color: $Verydarkcyan;
+}
+
+.card {
+    background-color: $White;
+    padding: 3em;
+    z-index: 10000;
+    width: 800px;
+    margin: auto;
+    border-radius: 20px;
+    @include flexAll();
+
+    .bill{
+        padding: 10px 0px 15px 0px;
+        color: $Darkgrayishcyan;
+        font-size: 16px;
+    }
+
+
+    .chtip{
+        padding: 30px  0px 15px 0px;
+        color: $Darkgrayishcyan;
+        font-size: 16px;
+    }
+
+    .pp{
+        padding: 30px  0px 15px 0px;
+        color: $Darkgrayishcyan;
+        @include flexSb;
+        font-size: 16px;
+    }
+
+    .input {
+        width: 50%;
+        height: 100%;
+    }
+
+    .output {
+        width: 50%;
+        height: 55vh;
+        display: block;
+        background-color: $Verydarkcyan;
+        border-radius: 10px;
+        margin-left: 20px;
+        padding: 20px;
+
+        position: relative;
+
+        .tipam{
+            @include flexSb();
+            align-items: center;
+            .tipAmount{
+                
+                .vf{
+                    color: $Lightgrayishcyan;
+                    font-size: 14px;
+                }
+                .tg{
+                    color: $Darkgrayishcyan;
+                    font-size: 12px;
+                }
+            }
+            .tipAmountNum{
+                color: $Strongcyan;
+                font-size: 50px;
+            }
+        }
+
+        .totalblock{
+            @include flexSb();
+            align-items: center;
+            .tot{
+               
+                .vf{
+                    color: $Lightgrayishcyan;
+                    font-size: 14px;
+                }
+                .tg{
+                    color: $Darkgrayishcyan;
+                    font-size: 12px;
+                }
+            }
+            .Total{
+                color: $Strongcyan;
+                font-size: 50px;
+            }
+        }
+
+        .reset{
+            position: absolute;
+            bottom: 30px;
+            width: 300px;
+
+            background-color: $Strongcyan;
+            color: $Verydarkcyan;
+            font-size: 20px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    }
+
+    .selectors {
+        @include flexSb();
+        flex-wrap: wrap;
+
+        input[name="tip"] {
+            display: none;
+        }
+
+        .btn {
+            width: 32%;
+            background-color: $Verydarkcyan;
+            color: $White;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+
+            label {
+                display: block;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    .inBill {
+        border-radius: 5px;
+        background-color: $Lightgrayishcyan1;
+        @include flexSb();
+        padding: 10px;
+
+        input {
+            background-color: $Lightgrayishcyan1;
+            outline: 0px;
+            border: 0px;
+            border-radius: 5px;
+            width: 100%;
+            text-align: end;
+        }
+        
+    }
+
+    .cust {
+        width: 32%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        background-color: $Lightgrayishcyan1;
+
+        input {
+            background-color: $Lightgrayishcyan1;
+            text-align: end;
+            outline: 0px;
+            border: 0px;
+            border-radius: 5px;
+            padding: 14px;
+            width: 100%;
+        }
+    }
+
+    .numPeop {
+        .x{
+            color: red;
+        }
+        .df {
+            border-radius: 5px;
+            background-color: $Lightgrayishcyan1;
+            @include flexSb();
+            padding: 10px;
+
+            input {
+                background-color: $Lightgrayishcyan1;
+                outline: 0px;
+                border: 0px;
+                border-radius: 5px;
+                width: 100%;
+                text-align: end;
+            }
+        }
+    }
+
+    .inBill:hover{
+        border:2px $Strongcyan solid;
+    }
+
+    .cust:hover{
+        border:2px $Strongcyan solid;
+    }
+
+    .df:hover{
+        border:2px $Strongcyan solid;
+    }
+
+    .reset:hover{
+        background-color: $Lightgrayishcyan1;
+    }
+    .btn:hover{
+        background-color: $Lightgrayishcyan1;
+        color: $Verydarkcyan;
+        cursor: pointer;
+    }
+}
+
+@media(max-width : 800px){
+
+    body{
+        width: 100vw;
+        display: block;
+        padding: 0px;
+        margin: 0px;
+        overflow-y: auto;
+    }
+
+    .title{
+        font-size: 25px;
+        font-weight: 700;
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: 100vw;
+    }
+    .card{
+        display: block;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        width: 100vw;
+        padding: 20px;
+        margin-top: 0px;
+        .input{
+            width: 100%;
+            .selectors{
+                width: 100%;
+                .btn{
+                    width: 48%;
+                    padding: 10px;
+                }
+            }
+
+            .cust {
+                width: 48%;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                background-color: $Lightgrayishcyan1;
+        
+                input {
+                    background-color: $Lightgrayishcyan1;
+                    text-align: end;
+                    outline: 0px;
+                    border: 0px;
+                    border-radius: 5px;
+                    padding: 14px;
+                    width: 100%;
+                }
+            }
+        }
+
+        .output{
+            width: 100%;
+            height: auto;
+            margin: 30px 0px ;
+            .reset{
+                position: relative;
+                bottom: 0px;
+                width: 100%;
+            }
+            
+        }
+    }
+}
+
+.activeBtn{
+    background-color: $Lightgrayishcyan !important;
+    color: $Verydarkcyan !important;
+}
+.anActiveBtn{
+    background-color: $Verydarkcyan !important;
+    color: $White !important;
+}

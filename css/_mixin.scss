@@ -1,0 +1,17 @@
+@mixin flex {
+
+    display: flex;
+    
+}
+
+@mixin flexAll {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+@mixin flexSb {
+    display: flex;
+    justify-content: space-between;
+}

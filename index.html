@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculater</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  
+  <div class="title">
+    <div>SPLI</div>
+    <div>TTER</div>
+     <br> 
+  </div>
+
+  <div class="card">
+    <div class="input">
+      <div class="bill">BILL</div>
+      <div class="inBill">
+        <img src="/images/icon-dollar.svg" alt="" srcset="">
+        <input type="text" class="billInput" id="" placeholder="Bill">
+      </div>
+
+      <div class="chtip">
+        Select Tip %
+      </div>
+
+      <div class="selectors">
+        <div class="btn">
+          <label for="tipPro">5%</label>
+          <input type="radio" name="tip" id="tipPro" value="5">
+        </div>
+
+        <div class="btn">
+          <label for="tipPro1">10%</label>
+          <input type="radio" name="tip" id="tipPro1" value="10">
+        </div>
+
+        <div class="btn">
+          <label for="tipPro2">15%</label>
+          <input type="radio" name="tip" id="tipPro2" value="15">
+        </div>
+
+        <div class="btn">
+          <label for="tipPro3">25%</label>
+          <input type="radio" name="tip" id="tipPro3" value="25">
+        </div>
+
+        <div class="btn">
+          <label for="tipPro4">50%</label>
+          <input type="radio" name="tip" id="tipPro4" value="50">
+        </div>
+
+        <div class="cust">
+          <input type="text" placeholder="CUSTOM" class="customInput">
+        </div>
+      </div>
+      <div class="numPeop">
+        <div class="pp">
+          <div class="c">
+            Number of People
+          </div>
+          <div class="x">Can't be Zero</div>
+        </div>
+        <div class="df">
+          <img src="/images/icon-person.svg" alt="" srcset="">
+          <input type="text" placeholder="Number Of People" id="peopleNumber">
+        </div>
+      </div>
+    </div>
+    <div class="output">
+      <div class="tipam">
+        <div class="tipAmount">
+          <div class="vf">Tip Amount</div>
+          <div class="tg">/ person</div>
+        </div>
+        <div class="tipAmountNum">0</div>
+      </div>
+      <div class="totalblock">
+        <div class="tot">
+          <div class="vf">Total</div>
+          <div class="tg">/ person</div>
+        </div>
+        <div class="Total">0</div>
+      </div>
+      <div class="reset">
+        RESET
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/jquery.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

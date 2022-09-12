@@ -1,0 +1,352 @@
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600 800;
+  src: local("Open Sans"), local("OPen Sans"), url("/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+}
+
+*, html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  background-color: #c5e4e7;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Manrope";
+  overflow: hidden;
+  display: block;
+}
+
+.x {
+  display: none;
+}
+
+.title {
+  width: 100vw;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  padding: 20px;
+  color: #00494d;
+}
+
+.card {
+  background-color: white;
+  padding: 3em;
+  z-index: 10000;
+  width: 800px;
+  margin: auto;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.card .bill {
+  padding: 10px 0px 15px 0px;
+  color: #7f9c9f;
+  font-size: 16px;
+}
+
+.card 0914667808
+.chtip {
+  padding: 30px  0px 15px 0px;
+  color: #7f9c9f;
+  font-size: 16px;
+}
+
+.card .pp {
+  padding: 30px  0px 15px 0px;
+  color: #7f9c9f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+}
+
+.card .input {
+  width: 50%;
+  height: 100%;
+}
+
+.card .output {
+  width: 50%;
+  height: 55vh;
+  display: block;
+  background-color: #00494d;
+  border-radius: 10px;
+  margin-left: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.card .output .tipam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .output .tipam .tipAmount .vf {
+  color: #c5e4e7;
+  font-size: 14px;
+}
+
+.card .output .tipam .tipAmount .tg {
+  color: #7f9c9f;
+  font-size: 12px;
+}
+
+.card .output .tipam .tipAmountNum {
+  color: #26c0ab;
+  font-size: 50px;
+}
+
+.card .output .totalblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .output .totalblock .tot .vf {
+  color: #c5e4e7;
+  font-size: 14px;
+}
+
+.card .output .totalblock .tot .tg {
+  color: #7f9c9f;
+  font-size: 12px;
+}
+
+.card .output .totalblock .Total {
+  color: #26c0ab;
+  font-size: 50px;
+}
+
+.card .output .reset {
+  position: absolute;
+  bottom: 30px;
+  width: 300px;
+  background-color: #26c0ab;
+  color: #00494d;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card .selectors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card .selectors input[name="tip"] {
+  display: none;
+}
+
+.card .selectors .btn {
+  width: 32%;
+  background-color: #00494d;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.card .selectors .btn label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card .inBill {
+  border-radius: 5px;
+  background-color: #f4fafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.card .inBill input {
+  background-color: #f4fafa;
+  outline: 0px;
+  border: 0px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: end;
+}
+
+.card .cust {
+  width: 32%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f4fafa;
+}
+
+.card .cust input {
+  background-color: #f4fafa;
+  text-align: end;
+  outline: 0px;
+  border: 0px;
+  border-radius: 5px;
+  padding: 14px;
+  width: 100%;
+}
+
+.card .numPeop .x {
+  color: red;
+}
+
+.card .numPeop .df {
+  border-radius: 5px;
+  background-color: #f4fafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.card .numPeop .df input {
+  background-color: #f4fafa;
+  outline: 0px;
+  border: 0px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: end;
+}
+
+.card .inBill:hover {
+  border: 2px #26c0ab solid;
+}
+
+.card .cust:hover {
+  border: 2px #26c0ab solid;
+}
+
+.card .df:hover {
+  border: 2px #26c0ab solid;
+}
+
+.card .reset:hover {
+  background-color: #f4fafa;
+}
+
+.card .btn:hover {
+  background-color: #f4fafa;
+  color: #00494d;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  body {
+    width: 100vw;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    overflow-y: auto;
+  }
+  .title {
+    font-size: 25px;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 100vw;
+  }
+  .card {
+    display: block;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 100vw;
+    padding: 20px;
+    margin-top: 0px;
+  }
+  .card .input {
+    width: 100%;
+  }
+  .card .input .selectors {
+    width: 100%;
+  }
+  .card .input .selectors .btn {
+    width: 48%;
+    padding: 10px;
+  }
+  .card .input .cust {
+    width: 48%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f4fafa;
+  }
+  .card .input .cust input {
+    background-color: #f4fafa;
+    text-align: end;
+    outline: 0px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 14px;
+    width: 100%;
+  }
+  .card .output {
+    width: 100%;
+    height: auto;
+    margin: 30px 0px;
+  }
+  .card .output .reset {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+  }
+}
+
+.activeBtn {
+  background-color: #c5e4e7 !important;
+  color: #00494d !important;
+}
+
+.anActiveBtn {
+  background-color: #00494d !important;
+  color: white !important;
+}
+/*# sourceMappingURL=style.css.map */
